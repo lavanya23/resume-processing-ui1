@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ResumeApiService {
-  private apiUrl = 'http://127.0.0.1:5000/process_candidates';
+  private apiUrl = 'https://api-python-demo1.azurewebsites.net/process_candidates';
 
   constructor(private http: HttpClient) {}
 

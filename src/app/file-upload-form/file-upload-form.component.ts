@@ -33,5 +33,9 @@ export class FileUploadFormComponent {
         console.error('Error uploading resumes:', error);
       }
     );
+     
+  }
+  getMatchStatus(similarity: number): string {
+    return similarity === 1 ? 'Matches' : 'Doesn\'t Match';
   }
 }
